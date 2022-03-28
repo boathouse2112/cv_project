@@ -34,4 +34,5 @@ class App extends Component<{}, AppState> {
   }
 }
 
+export type { AppState };
 export default App;
