@@ -1,11 +1,12 @@
 import { Component } from 'react';
+import './PersonalInformation.css';
 
-type Gender = 'male' | 'female' | 'other';
+type Sex = 'male' | 'female' | 'other';
 
 interface PersonalInformationProps {
   name: string;
   age: number;
-  gender: Gender;
+  sex: Sex;
   id: string;
   phone: string;
   address: string;
@@ -20,12 +21,12 @@ class PersonalInformation extends Component<PersonalInformationProps, {}> {
   render() {
     return (
       <div className="personal-information">
-        <div>{this.props.name}</div>
-        <div>{this.props.age}</div>
-        <div>{this.props.gender}</div>
-        <div>{this.props.id}</div>
-        <div>{this.props.phone}</div>
-        <div>{this.props.address}</div>
+        <div>Name: {this.props.name}</div>
+        <div>Age: {this.props.age}</div>
+        <div>Sex: {this.props.sex}</div>
+        <div>ID: {this.props.id}</div>
+        <div>Phone: {this.props.phone}</div>
+        <div>Address: {this.props.address}</div>
       </div>
     );
   }

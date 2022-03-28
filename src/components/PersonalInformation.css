@@ -1,0 +1,4 @@
+.personal-information {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10px, 1fr));
+}

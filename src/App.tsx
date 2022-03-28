@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import PersonalInformation, {
-  PersonalInformationProps,
-} from './components/PersonalInformation';
+import './App.css';
+import { PersonalInformationProps } from './components/PersonalInformation';
+import Resume from './components/Resume';
 
 interface AppState {
   personalInformation: PersonalInformationProps;
@@ -11,7 +11,7 @@ const initialState: AppState = {
   personalInformation: {
     name: 'Mark Murphy',
     age: 0,
-    gender: 'male',
+    sex: 'male',
     id: '000283',
     phone: '000-000-000',
     address: '28967',
@@ -27,8 +27,8 @@ class App extends Component<{}, AppState> {
 
   render() {
     return (
-      <div className="App">
-        <PersonalInformation {...this.state.personalInformation} />
+      <div className="app">
+        <Resume {...this.state} />
       </div>
     );
   }
