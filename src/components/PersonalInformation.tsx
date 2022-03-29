@@ -3,7 +3,7 @@ import './PersonalInformation.css';
 
 type Sex = 'male' | 'female' | 'other';
 
-interface PersonalInformationProps {
+interface PersonalInformationData {
   name: string;
   age: number;
   sex: Sex;
@@ -12,8 +12,8 @@ interface PersonalInformationProps {
   address: string;
 }
 
-class PersonalInformation extends Component<PersonalInformationProps, {}> {
-  constructor(props: PersonalInformationProps) {
+class PersonalInformation extends Component<PersonalInformationData, {}> {
+  constructor(props: PersonalInformationData) {
     super(props);
     console.log();
   }
@@ -32,5 +32,5 @@ class PersonalInformation extends Component<PersonalInformationProps, {}> {
   }
 }
 
-export type { PersonalInformationProps };
+export type { PersonalInformationData };
 export default PersonalInformation;
