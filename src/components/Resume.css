@@ -2,4 +2,12 @@
   background-color: #eeeeee;
   height: 100%;
   aspect-ratio: 1 / 1.2941;
+
+  display: grid;
+  grid-template-columns: minmax(10px, 1fr) minmax(10px, 2fr);
+  grid-template-areas: 'none personal-information';
+}
+
+.personal-information {
+  grid-area: personal-information;
 }

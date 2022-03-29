@@ -1,4 +1,8 @@
 .personal-information {
+  height: fit-content;
+
   display: grid;
   grid-template-columns: repeat(3, minmax(10px, 1fr));
+
+  font-size: 2vh;
 }
