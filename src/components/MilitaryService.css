@@ -1,6 +1,6 @@
 .military-service {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: fit-content(200px) 1fr;
 }
 
 .military-service-years {

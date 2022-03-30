@@ -11,6 +11,7 @@
     'none personal-information'
     'education education'
     'military-service military-service';
+  row-gap: 20px;
 }
 
 .personal-information {
