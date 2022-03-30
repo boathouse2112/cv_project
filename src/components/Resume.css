@@ -9,7 +9,8 @@
   grid-auto-rows: minmax(min-content, max-content);
   grid-template-areas:
     'none personal-information'
-    'education education';
+    'education education'
+    'military-service military-service';
 }
 
 .personal-information {
@@ -18,4 +19,8 @@
 
 .education {
   grid-area: education;
+}
+
+.military-service {
+  grid-area: military-service;
 }

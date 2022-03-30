@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import './MilitaryService.css';
 
 interface MilitaryServiceData {
   startYear: number;
@@ -10,17 +11,19 @@ interface MilitaryServiceData {
 class MilitaryService extends Component<MilitaryServiceData, {}> {
   render() {
     return (
-      <div>
+      <div className="military-service">
         <div>Military Service</div>
-        <div>
+        <div className="military-service-years">
           {this.props.startYear} - {this.props.endYear}
         </div>
         <div>Unit: {this.props.unit}</div>
-        <div>
+        <div className="commendations-container">
           <div>Commendations: </div>
-          <div>{this.props.commendations[0] ?? ''}</div>
-          <div>{this.props.commendations[1] ?? ''}</div>
-          <div>{this.props.commendations[2] ?? ''}</div>
+          <div className="commendations">
+            <div>{this.props.commendations[0] ?? ''}</div>
+            <div>{this.props.commendations[1] ?? ''}</div>
+            <div>{this.props.commendations[2] ?? ''}</div>
+          </div>
         </div>
       </div>
     );

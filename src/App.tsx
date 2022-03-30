@@ -45,7 +45,7 @@ const initialState: AppState = {
     startYear: 2011,
     endYear: 2013,
     unit: 'blue',
-    commendations: [],
+    commendations: ['Green Heart', 'Wealthy', 'Exceptional'],
   },
 };
 
