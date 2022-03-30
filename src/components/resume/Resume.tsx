@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { AppState } from '../App';
+import { AppState } from '../../App';
 import Education from './Education';
 import MilitaryService from './MilitaryService';
 import PartyAffiliation from './PartyAffiliation';
