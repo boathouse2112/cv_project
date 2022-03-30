@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import './School.css';
 
 type EducationPhase = 'primary' | 'secondary' | 'tertiary';
 
@@ -12,7 +13,7 @@ interface SchoolData {
 class School extends Component<SchoolData, {}> {
   render() {
     return (
-      <div>
+      <div className={`school ${this.props.educationPhase}`}>
         <div>
           {this.props.educationPhase}: {this.props.schoolName}
         </div>
