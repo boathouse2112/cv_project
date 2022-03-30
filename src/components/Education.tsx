@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import './Education.css';
 import School, { SchoolData } from './School';
 
 interface EducationData {
@@ -12,9 +13,13 @@ class Education extends Component<EducationData, {}> {
   render() {
     return (
       <div className="education">
-        <div>Civil Service Exam Score: {this.props.examScore}</div>
+        <div className="education-title">Education</div>
+        <div className="exam-score">
+          Civil Service Exam Score: {this.props.examScore}
+        </div>
         <School {...this.props.primary}></School>
         <School {...this.props.secondary}></School>
+        <School {...this.props.tertiary}></School>
       </div>
     );
   }

@@ -1,0 +1,30 @@
+.education {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10px, 1fr));
+  grid-template-rows: repeat(4, minmax(10px, 1fr));
+  grid-template-areas:
+    'education-title exam-score exam-score'
+    'primary primary primary'
+    'secondary secondary secondary'
+    'tertiary tertiary tertiary';
+}
+
+.education-title {
+  grid-area: education-title;
+}
+
+.exam-score {
+  grid-area: exam-score;
+}
+
+.primary {
+  grid-area: primary;
+}
+
+.secondary {
+  grid-area: secondary;
+}
+
+.tertiary {
+  grid-area: tertiary;
+}
