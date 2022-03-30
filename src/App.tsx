@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 import { EducationData } from './components/Education';
+import { MilitaryServiceData } from './components/MilitaryService';
 import { PersonalInformationData } from './components/PersonalInformation';
 import Resume from './components/Resume';
 
 interface AppState {
   personalInformation: PersonalInformationData;
   education: EducationData;
+  militaryService: MilitaryServiceData;
 }
 
 const initialState: AppState = {
@@ -35,9 +37,15 @@ const initialState: AppState = {
     tertiary: {
       educationPhase: 'tertiary',
       schoolName: 'Tertiary Academy for the Tertiares',
-      startYear: 2011,
-      endYear: 2015,
+      startYear: 2013,
+      endYear: 2017,
     },
+  },
+  militaryService: {
+    startYear: 2011,
+    endYear: 2013,
+    unit: 'blue',
+    commendations: [],
   },
 };
 
