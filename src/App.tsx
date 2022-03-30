@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { EducationData } from './components/Education';
 import { MilitaryServiceData } from './components/MilitaryService';
+import { PartyAffiliationData } from './components/PartyAffiliation';
 import { PersonalInformationData } from './components/PersonalInformation';
 import Resume from './components/Resume';
 
@@ -9,6 +10,7 @@ interface AppState {
   personalInformation: PersonalInformationData;
   education: EducationData;
   militaryService: MilitaryServiceData;
+  partyAffiliation: PartyAffiliationData;
 }
 
 const initialState: AppState = {
@@ -46,6 +48,11 @@ const initialState: AppState = {
     endYear: 2013,
     unit: 'blue',
     commendations: ['Green Heart', 'Wealthy', 'Exceptional'],
+  },
+  partyAffiliation: {
+    partyName: "State Worker's Party",
+    rank: 'b',
+    positions: ['Secretary', 'Treasurer', 'Dog Catcher'],
   },
 };
 

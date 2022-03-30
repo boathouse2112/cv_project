@@ -1,0 +1,4 @@
+.party-affiliation {
+  display: flex;
+  flex-direction: row;
+}

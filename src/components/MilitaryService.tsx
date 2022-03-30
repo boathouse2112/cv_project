@@ -5,7 +5,7 @@ interface MilitaryServiceData {
   startYear: number;
   endYear: number;
   unit: string;
-  commendations: string[]; // Max 3 commendations
+  commendations?: string[]; // Max 3 commendations
 }
 
 class MilitaryService extends Component<MilitaryServiceData, {}> {
@@ -20,9 +20,9 @@ class MilitaryService extends Component<MilitaryServiceData, {}> {
         <div className="commendations-container">
           <div>Commendations: </div>
           <div className="commendations">
-            <div>{this.props.commendations[0] ?? ''}</div>
-            <div>{this.props.commendations[1] ?? ''}</div>
-            <div>{this.props.commendations[2] ?? ''}</div>
+            <div>{this.props.commendations?.[0] ?? ''}</div>
+            <div>{this.props.commendations?.[1] ?? ''}</div>
+            <div>{this.props.commendations?.[2] ?? ''}</div>
           </div>
         </div>
       </div>

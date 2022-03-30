@@ -10,7 +10,8 @@
   grid-template-areas:
     'none personal-information'
     'education education'
-    'military-service military-service';
+    'military-service military-service'
+    'party-affiliation party-affiliation';
   row-gap: 20px;
 }
 
@@ -24,4 +25,8 @@
 
 .military-service {
   grid-area: military-service;
+}
+
+.party-affiliation {
+  grid-area: party-affiliation;
 }
